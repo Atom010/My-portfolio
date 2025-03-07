@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
+import aboutImg from '@/public/placeholder.jpg'
 
 export default function About() {
   const skills = [
@@ -40,10 +41,10 @@ export default function About() {
             >
               <div className="relative w-full aspect-square max-w-md mx-auto md:mx-0 cyberpunk-border rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src={aboutImg}
+                  fill
                   alt="Profile"
-                  width={400}
-                  height={400}
+                  
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
