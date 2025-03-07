@@ -6,6 +6,8 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github } from "lucide-react"
+import img1 from '@/public/placeholder-user.jpg'
+import img2 from '@/public/placeholder-logo.png'
 
 export default function Projects() {
   const [activeProject, setActiveProject] = useState(0)
@@ -14,7 +16,7 @@ export default function Projects() {
     {
       title: "Immersive 3D Portfolio",
       description: "A portfolio website with interactive 3D elements and animations built with Three.js and React.",
-      image: "/placeholder.svg?height=600&width=800",
+      image: img1,
       tags: ["React", "Three.js", "Framer Motion", "GSAP"],
       liveLink: "#",
       githubLink: "#",
@@ -23,7 +25,7 @@ export default function Projects() {
       title: "E-Commerce Dashboard",
       description:
         "A comprehensive dashboard for e-commerce businesses with real-time analytics and inventory management.",
-      image: "/placeholder.svg?height=600&width=800",
+      image: img1,
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
       liveLink: "#",
       githubLink: "#",
@@ -31,7 +33,7 @@ export default function Projects() {
     {
       title: "AI Content Generator",
       description: "A tool that uses AI to generate marketing content and social media posts for businesses.",
-      image: "/placeholder.svg?height=600&width=800",
+      image: img1,
       tags: ["React", "Node.js", "OpenAI API", "MongoDB"],
       liveLink: "#",
       githubLink: "#",
